@@ -1,12 +1,13 @@
 nav{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 #photo{
     background-image: url("./kw-background.png");
     background-size: auto ;
     background-repeat: no-repeat;
-    background-size: 1500px 200px;
+    background-size: 100% 110%;
     margin-bottom: 50px;
 }
 #shop{
@@ -36,15 +37,20 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 #games{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .price{
     display: flex;
     flex-direction: row;
+    
+    
+    flex-wrap: wrap;
     justify-content: space-between;
     font-size: 14px;
 }
@@ -74,6 +80,8 @@ footer{
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
+    flex-wrap: wrap;
+    
 }
 .margin{
     margin-top: 50px;
@@ -82,3 +90,15 @@ footer{
     font-size: 15px;
     font-weight: bold;
 }
+*{
+    box-sizing: border-box;
+}
+@media(max-width:1115px){
+    #gallary{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    }
+
